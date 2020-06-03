@@ -20,6 +20,7 @@
   --copyright-line: rgba(255, 255, 255, 0.1);
   --header-line: #ececec;
   --card-border-line: #eeeeee;
+  --item-bg-color: rgba(47, 48, 58, 0.8);
 }
 
 html {
@@ -73,9 +74,9 @@ img {
 }
 
 /* Временный цвет фона для того чтобы видеть абзацы с белым текстом!!!!!!!!!!!!!! */
-.temporary-bgc {
+/* .temporary-bgc {
   background-color: #afeeee;
-}
+} */
 
 /* Логотип */
 
@@ -199,7 +200,19 @@ img {
 } */
 
 /* Подчеркивание текущей страницы в шапке */
-.current::after {
+.site-nav .item {
+  position: relative;
+}
+
+.site-nav .current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 /* Подвал */
