@@ -8,8 +8,7 @@
 
 .overlay {
   outline: 1px solid black;
-  /* Убираю макксимальную ширину фона
-  max-width: 1600px; */
+  max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
