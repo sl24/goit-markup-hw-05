@@ -173,8 +173,6 @@
 }
 
 .section .title-white {
-  /* margin-top: 27px;
-  margin-bottom: 27px; */
   margin: 0;
   padding: 0;
 
@@ -279,6 +277,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: border-color 250ms var(--cubic);
+}
+
+.clients-list .button-icon {
+  fill: var(--icon-border-color);
+  transition: fill 250ms var(--cubic);
 }
 
 .clients-list .item:not(:last-child) {
@@ -287,6 +291,9 @@
 
 .clients-list .item:hover {
   border-color: var(--accent-color);
-  --color4: var(--accent-color);
   cursor: pointer;
+}
+
+.clients-list .item:hover .button-icon {
+  fill: var(--accent-color);
 }
